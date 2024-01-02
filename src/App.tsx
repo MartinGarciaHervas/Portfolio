@@ -3,7 +3,7 @@ import Home from './Views/Home'
 function App() {
 
   return (
-      <div>
+      <div className='bg-black text-white w-screen h-screen'>
         <Home/>
       </div>
   )
