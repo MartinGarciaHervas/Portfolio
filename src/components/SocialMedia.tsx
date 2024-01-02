@@ -5,7 +5,7 @@ import gmail from '../assets/CibGmail (1).svg'
 const SocialMedia = () => {
     return (
         <div className="flex justify-end">
-                <div className="w-9 h-6 mr-1">
+                <div className="w-9 h-6 mr-5">
                     <a href={`mailto:ghervasmartin@gmail.com`} target="_blank">
                         <img
                             src={gmail}
@@ -14,7 +14,7 @@ const SocialMedia = () => {
                         />
                     </a>
                 </div>
-                <div className="w-9 h-6">
+                <div className="w-9 h-6 mr-4">
                     <a href="https://github.com/MartinGarciaHervas" target="_blank">
                         <img
                             src={github}
@@ -23,7 +23,7 @@ const SocialMedia = () => {
                         />
                     </a>
                 </div>
-                <div className="w-9 h-6">
+                <div className="w-9 h-6 mr-4">
                     <a href="https://linkedin.com/in/martin-garcia-hervas-07846a281" target="_blank">
                         <img
                             src={linkedin}
