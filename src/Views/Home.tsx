@@ -9,25 +9,31 @@ const Home = () => {
         <div className="flex flex-col">
             <div className="flex justify-end">
                 <div>
-                    <img
-                        src={github}
-                        alt="github"
-                        className="w-10"
-                    />
+                    <a href="https://github.com/MartinGarciaHervas" target="_blank">
+                        <img
+                            src={github}
+                            alt="github"
+                            className="w-10"
+                        />
+                    </a>
                 </div>
                 <div>
-                    <img
-                        src={linkedin}
-                        alt="linkedin"
-                        className="w-10"
-                    />
+                    <a href="https://linkedin.com/in/martin-garcia-hervas-07846a281" target="_blank">
+                        <img
+                            src={linkedin}
+                            alt="linkedin"
+                            className="w-10"
+                        />
+                    </a>
                 </div>
                 <div>
-                    <img
-                        src={gmail}
-                        alt="gmail"
-                        className="w-10"
-                    />
+                    <a href={`mailto:ghervasmartin@gmail.com`} target="_blank">
+                        <img
+                            src={gmail}
+                            alt="gmail"
+                            className="w-10"
+                        />
+                    </a>
                 </div>
             </div>
             <h1>Welcome!</h1>
