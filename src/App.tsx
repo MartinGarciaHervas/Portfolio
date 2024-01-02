@@ -1,11 +1,11 @@
-import Bio from './components/Bio'
+import Home from './views/Home'
 import './App.css'
 
 function App() {
 
   return (
       <div>
-        <Bio/>
+        <Home/>
       </div>
   )
 }
