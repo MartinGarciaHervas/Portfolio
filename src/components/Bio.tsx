@@ -1,7 +1,7 @@
 const Bio = () => {
     return (
-        <div className="flex justify-start">
-            <div className="w-1/2">
+        <div className="flex justify-start w-1/2">
+            <div>
                 <h1 className="text-5xl mb-10">Welcome!</h1>
                 <div className="border-l-4 border-gray-700 hover:border-bordergreen transition-all duration-300 rounded-lg p-3">
                     <p className="mb-5">My name is Martín García Hervás, I'm a Full Stack Developer with over 3 years of experience in logistics and construction.</p>
