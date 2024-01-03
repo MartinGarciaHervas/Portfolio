@@ -30,9 +30,9 @@ const Bio = () => {
                         {db.Projects.map(project => {
                             if(project.title === info){
                                 return(
-                                    <div>
-                                    <a href={project.url} target="_blank"><p>Check the code</p></a>
-                                    {project.pageUrl && <a href={project.pageUrl} target="_blank">Take a look</a>}
+                                    <div className="flex justify-around">
+                                    <a href={project.url} target="_blank"><p className="border-b-4 rounded-s border-gray-700 hover:border-bordergreen transition-all duration-300">Check the code</p></a>
+                                    {project.pageUrl && <a href={project.pageUrl} target="_blank"><p className="border-b-4 rounded-s border-gray-700 hover:border-bordergreen transition-all duration-300">Take a look</p></a>}
                                     </div>
                                 )
                             }
