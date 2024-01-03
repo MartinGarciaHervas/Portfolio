@@ -1,6 +1,7 @@
 import github from '../assets/MdiGithub.svg'
 import linkedin from '../assets/MdiLinkedin.svg'
 import gmail from '../assets/CibGmail (1).svg'
+import logo from '../../public/logo white.svg'
 
 interface Props {
     infoSelect: (proyecto:string)=>void
@@ -9,8 +10,8 @@ interface Props {
 const SocialMedia:React.FC<Props> = ({infoSelect}) => {
     return (
         <div className='flex justify-between mt-2 mb-6 w-full'>
-            <div className='border-l-2 border-t-2 rounded-xl border-bordergreen hover:border-gray-700 transition-all duration-300'>
-                <button onClick={()=>{infoSelect('Bio')}} className='pl-2 pr-2'>About Me</button>
+            <div className='rounded-full pt-1 pr-1 hover:bg-bordergreen transition-all duration-500'>
+                <button onClick={()=>{infoSelect('Bio')}} className='pl-2 pr-2'><img className='w-16' src={logo}/></button>
             </div>
             <div className='flex'>
                 <div className="w-9 h-6 mr-5">
