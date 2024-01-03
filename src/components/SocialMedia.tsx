@@ -4,7 +4,7 @@ import gmail from '../assets/CibGmail (1).svg'
 
 const SocialMedia = () => {
     return (
-        <div className='flex justify-between mb-6'>
+        <div className='flex justify-between mb-6 w-full'>
             <div className='border-l-2 border-t-2 rounded-xl border-bordergreen hover:border-gray-700 transition-all duration-300'>
                 <p className='pl-2 pr-2'>About Me</p>
             </div>
