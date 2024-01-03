@@ -1,21 +1,31 @@
+import { useState } from "react"
 import Projects from "./Projects"
+import db from '../utils/db.json'
 
 const Bio = () => {
 
-    
+    const [info, setInfo] = useState("Bio");
+
+    const infoHandler = (proyecto:string):void => {
+        setInfo(proyecto)
+    }
 
     return (
         <div className="flex flex-col items-start lg:flex-row">
             <div className="lg:w-1/2">
-                <h1 className="text-5xl lg:text-8xl mb-10">Welcome!</h1>
+                <h1 className="text-5xl lg:text-8xl mb-10">{info === 'Bio' ? db.Bio.title.en : info}</h1>
                 <div className="border-l-4 border-gray-700 hover:border-bordergreen transition-all duration-300 rounded-lg p-3">
-                    <p className="mb-5">My name is Martín García Hervás, I'm a Full Stack Developer, with background experience of over 3 years in logistics and construction. I have worked on projects involving design and
-                        development in both Front End and Back End.</p>
-                    <p>My Soft-Skills include strong organizational ability, teamwork, and leadership.</p>
+                    {info === 'Bio' ? db.Bio.desc.en : db.Projects.map(project => {
+                        if (project.title === info) {
+                            return (
+                                <p>{project.desc.en}</p>
+                            )
+                        }
+                    })}
                 </div>
             </div>
             <div className="flex lg:w-1/2 lg:h-full lg:justify-center lg:items-center">
-                <Projects/>
+                <Projects infoSelect={infoHandler}/>
             </div>
         </div>
     )
