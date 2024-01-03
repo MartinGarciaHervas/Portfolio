@@ -11,7 +11,7 @@ const Projects: React.FC<Props> = ({infoSelect}) => {
                 <h1 className="text-4xl mb-10">My Projects</h1>
                 <div className="flex flex-col border-l-4 border-t-4 border-gray-700 hover:border-bordergreen transition-all duration-300 rounded-lg p-3">
                     {db.Projects.map((project, index) => (
-                        <button onClick={()=>{infoSelect(project.title)}} key={index}>{project.title}</button>
+                        <button className='border-b rounded-s border-gray-700 hover:border-bordergreen transition-all duration-300 w-1/2 flex' onClick={()=>{infoSelect(project.title)}} key={index}>{project.title}</button>
                     ))}
                 </div>
             </div>
