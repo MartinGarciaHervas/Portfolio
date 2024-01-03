@@ -6,7 +6,7 @@ interface Props {
 
 const Projects: React.FC<Props> = ({infoSelect}) => {
     return (
-        <div className="flex flex-col lg:items-center mt-20 lg:mt-0 lg:w-1/2">
+        <div className="flex flex-col lg:items-center mb-20 lg:w-1/2">
             <div>
                 <h1 className="text-4xl mb-10">My Projects</h1>
                 <div className="flex flex-col border-l-4 border-t-4 border-gray-700 hover:border-bordergreen transition-all duration-300 rounded-lg p-3">

@@ -8,7 +8,7 @@ interface Props {
 
 const SocialMedia:React.FC<Props> = ({infoSelect}) => {
     return (
-        <div className='flex justify-between mb-6 w-full'>
+        <div className='flex justify-between mt-2 mb-6 w-full'>
             <div className='border-l-2 border-t-2 rounded-xl border-bordergreen hover:border-gray-700 transition-all duration-300'>
                 <button onClick={()=>{infoSelect('Bio')}} className='pl-2 pr-2'>About Me</button>
             </div>
