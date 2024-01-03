@@ -12,7 +12,7 @@ const Bio = () => {
     }
 
     return (
-        <div className="flex flex-col justify-start lg:justify-center">
+        <div className="flex flex-col w-full justify-start lg:justify-center">
             <SocialMedia infoSelect={infoHandler}/>
             <div className="flex flex-col lg:flex-row justify-between h-full lg:h-3/4">
                 <div className="lg:w-1/2">
@@ -22,6 +22,18 @@ const Bio = () => {
                             if (project.title === info) {
                                 return (
                                     <p>{project.desc.en}</p>
+                                )
+                            }
+                        })}
+                    </div>
+                    <div>
+                        {db.Projects.map(project => {
+                            if(project.title === info){
+                                return(
+                                    <div>
+                                    <a href={project.url} target="_blank"><p>Check the code</p></a>
+                                    {project.pageUrl && <a href={project.pageUrl} target="_blank">Take a look</a>}
+                                    </div>
                                 )
                             }
                         })}
