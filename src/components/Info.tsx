@@ -17,22 +17,7 @@ import sql from '../../public/Logos/DeviconSequelize.svg'
 import i18next from '../../public/Logos/SimpleIconsI18next.svg'
 import tw from '../../public/Logos/VscodeIconsFileTypeTailwind.svg'
 
-interface Logos {
-    [key:string]:string
-    html5:string
-    css3:string
-    git:string
-    js:string
-    ts:string
-    rt:string
-    rx:string
-    nd:string
-    ex:string
-    tw:string
-    psql:string
-    sql:string
-    i18next:string
-}
+import {type Logos} from '../types'
 
 const Info = () => {
 
