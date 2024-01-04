@@ -17,11 +17,28 @@ import sql from '../../public/Logos/DeviconSequelize.svg'
 import i18next from '../../public/Logos/SimpleIconsI18next.svg'
 import tw from '../../public/Logos/VscodeIconsFileTypeTailwind.svg'
 
+interface Logos {
+    [key:string]:string
+    html5:string
+    css3:string
+    git:string
+    js:string
+    ts:string
+    rt:string
+    rx:string
+    nd:string
+    ex:string
+    tw:string
+    psql:string
+    sql:string
+    i18next:string
+}
+
 const Bio = () => {
 
     const [info, setInfo] = useState("Bio");
 
-    const logos:[Logos] = [html5, css3, git, js, ts, rt, rx, nd, ex, tw, psql, sql, i18next]
+    const logos:Logos = {html5, css3, git, js, ts, rt, rx, nd, ex, tw, psql, sql, i18next}
 
     const infoHandler = (proyecto: string): void => {
         setInfo(proyecto)
@@ -34,13 +51,15 @@ const Bio = () => {
                 <div className="lg:w-1/2">
                     <h1 className="text-5xl lg:text-8xl mb-10">{info === 'Bio' ? db.Bio.title.en : info}</h1>
                     <div className="border-l-4 border-gray-700 hover:border-bordergreen transition-all duration-300 rounded-lg p-3">
-                        {info === 'Bio' ? db.Bio.desc.en : db.Projects.map(project => {
+                        {info === 'Bio' ? db.Bio.desc.en : db.Projects.map((project, i)=> {
                             if (project.title === info) {
                                 return (
-                                    <div>
+                                    <div key={i}>
                                     <p>{project.desc.en}</p>
                                     <div className="flex">
-                                        {}
+                                        {project.technologies.map((tech, i )=> { 
+                                                return <img key={i} src={logos[tech]} />
+                                        } )}
                                     </div>
                                     </div>
                                 )
@@ -48,10 +67,10 @@ const Bio = () => {
                         })}
                     </div>
                     <div>
-                        {db.Projects.map(project => {
+                        {db.Projects.map((project, i) => {
                             if(project.title === info){
                                 return(
-                                    <div className="flex justify-around">
+                                    <div key={i} className="flex justify-around">
                                     <a href={project.url} target="_blank"><p className="border-b-4 rounded-s border-gray-700 hover:border-bordergreen transition-all duration-300">Check the code</p></a>
                                     {project.pageUrl && <a href={project.pageUrl} target="_blank"><p className="border-b-4 rounded-s border-gray-700 hover:border-bordergreen transition-all duration-300">Take a look</p></a>}
                                     </div>
