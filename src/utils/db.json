@@ -6,7 +6,10 @@
                 "en": "Focused on offering services to enhance client skills, CreVa is a real company aiming to create value in individuals characteristics."
             },
             "pageUrl":"https://creva.vercel.app/",
-            "url":"https://github.com/CrevaGroup/server"
+            "url":"https://github.com/CrevaGroup/server",
+            "technologies": [
+                "js", "rt", "tw", "html5", "git", "rx", "nd", "ex", "psql", "sql"
+            ]
         },
         {
             "title": "Countries",
@@ -14,13 +17,19 @@
                 "en": "Focused on managing country-related activities, this platform allows users to create activities associated with specific countries, providing an interactive and informative experience."
             },
             "pageUrl":"https://pi-front-one.vercel.app/",
-            "url":"https://github.com/MartinGarciaHervas/Proyecto-Individual-Countries"
+            "url":"https://github.com/MartinGarciaHervas/Proyecto-Individual-Countries",
+            "technologies": [
+                "js", "rt", "html5", "git", "rx", "nd", "ex", "psql", "sql", "css3"
+            ]
         },{
             "title": "Portfolio",
             "desc": {
                 "en": "This portfolio :)"
             },
-            "url":"https://github.com/MartinGarciaHervas/Portfolio"
+            "url":"https://github.com/MartinGarciaHervas/Portfolio",
+            "technologies": [
+                "ts", "html5", "tw", "rt", "git"
+            ]
         }
     ],
     "Bio": {

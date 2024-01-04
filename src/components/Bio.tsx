@@ -15,12 +15,13 @@ import ex from '../../public/Logos/SkillIconsExpressjsLight.svg'
 import psql from '../../public/Logos/LogosPostgresql.svg'
 import sql from '../../public/Logos/DeviconSequelize.svg'
 import i18next from '../../public/Logos/SimpleIconsI18next.svg'
+import tw from '../../public/Logos/VscodeIconsFileTypeTailwind.svg'
 
 const Bio = () => {
 
     const [info, setInfo] = useState("Bio");
 
-    const logos:[Logos] = [html5, css3, git, js, ts, rt, rx, nd, ex, psql, sql, i18next]
+    const logos:[Logos] = [html5, css3, git, js, ts, rt, rx, nd, ex, tw, psql, sql, i18next]
 
     const infoHandler = (proyecto: string): void => {
         setInfo(proyecto)
