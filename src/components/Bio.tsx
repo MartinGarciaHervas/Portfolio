@@ -3,9 +3,24 @@ import Projects from "./Projects"
 import db from '../utils/db.json'
 import SocialMedia from "./SocialMedia";
 
+import html5 from '../../public/Logos/DeviconHtml5.svg'
+import css3 from '../../public/Logos/DeviconCss3.svg'
+import git from '../../public/Logos/LogosGitIcon.svg'
+import js from '../../public/Logos/SkillIconsJavascript.svg'
+import ts from '../../public/Logos/SkillIconsTypescript.svg'
+import rt from '../../public/Logos/LogosReact.svg'
+import rx from '../../public/Logos/LogosRedux.svg'
+import nd from '../../public/Logos/LogosNodejsIcon.svg'
+import ex from '../../public/Logos/SkillIconsExpressjsLight.svg'
+import psql from '../../public/Logos/LogosPostgresql.svg'
+import sql from '../../public/Logos/DeviconSequelize.svg'
+import i18next from '../../public/Logos/SimpleIconsI18next.svg'
+
 const Bio = () => {
 
     const [info, setInfo] = useState("Bio");
+
+    const logos:[Logos] = [html5, css3, git, js, ts, rt, rx, nd, ex, psql, sql, i18next]
 
     const infoHandler = (proyecto: string): void => {
         setInfo(proyecto)
@@ -21,7 +36,12 @@ const Bio = () => {
                         {info === 'Bio' ? db.Bio.desc.en : db.Projects.map(project => {
                             if (project.title === info) {
                                 return (
+                                    <div>
                                     <p>{project.desc.en}</p>
+                                    <div className="flex">
+                                        {}
+                                    </div>
+                                    </div>
                                 )
                             }
                         })}
