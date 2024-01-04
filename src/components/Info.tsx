@@ -34,7 +34,7 @@ interface Logos {
     i18next:string
 }
 
-const Bio = () => {
+const Info = () => {
 
     const [info, setInfo] = useState("Bio");
 
@@ -87,4 +87,4 @@ const Bio = () => {
     )
 }
 
-export default Bio
+export default Info
