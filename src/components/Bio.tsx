@@ -56,9 +56,9 @@ const Bio = () => {
                                 return (
                                     <div key={i}>
                                     <p>{project.desc.en}</p>
-                                    <div className="flex">
+                                    <div className="flex flex-between mt-2">
                                         {project.technologies.map((tech, i )=> { 
-                                                return <img key={i} src={logos[tech]} />
+                                                return <img className="w-5 mr-2" key={i} src={logos[tech]} />
                                         } )}
                                     </div>
                                     </div>
