@@ -42,7 +42,7 @@ const Info = () => {
             <SocialMedia infoSelect={infoHandler} languageInfo={languageHandler} />
             <div className="flex flex-col ml-2 lg:m-0 lg:flex-row justify-between h-full lg:h-3/4">
                 <div className="lg:w-1/2">
-                    <h1 className="text-5xl lg:text-8xl mb-10">{info === 'Bio' ? db.Bio.title.en : info}</h1>
+                    <h1 className="text-5xl lg:text-8xl mb-10">{info === 'Bio' ? db.Bio.title[language] : info}</h1>
                     <div className="border-l-4 border-gray-700 hover:border-bordergreen transition-all duration-300 rounded-lg p-3">
                         {info === 'Bio' ? db.Bio.desc[language] : db.Projects.map((project, i) => {
                             if (project.title === info) {
