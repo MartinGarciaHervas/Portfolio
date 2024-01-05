@@ -49,9 +49,9 @@ const Info = () => {
                                 return (
                                     <div key={i}>
                                         <p>{project.desc[language]}</p>
-                                        <div className="flex flex-between mt-2">
+                                        <div className="flex justify-start items-center h-7 mt-2">
                                             {project.technologies.map((tech, i) => {
-                                                return <img className="w-5 mr-2" key={i} src={logos[tech]} />
+                                                return <img className="w-5 mr-1 ml-1 hover:w-6 transition-all duration-300" key={i} src={logos[tech]} />
                                             })}
                                         </div>
                                     </div>
