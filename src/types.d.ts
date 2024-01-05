@@ -20,7 +20,7 @@ export interface Project {
     desc: {
         [key:string]:string
     }
-    pageUrl:string
+    pageUrl?:string
     url:string
     technologies:string[]
 }

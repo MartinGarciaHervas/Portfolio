@@ -1,23 +1,25 @@
 import { useState } from "react"
 import Projects from "./Projects"
-import db from '../utils/db.json'
+import dbs from '../utils/db.json'
 import SocialMedia from "./SocialMedia";
 
-import html5 from '../../public/Logos/DeviconHtml5.svg'
-import css3 from '../../public/Logos/DeviconCss3.svg'
-import git from '../../public/Logos/LogosGitIcon.svg'
-import js from '../../public/Logos/SkillIconsJavascript.svg'
-import ts from '../../public/Logos/SkillIconsTypescript.svg'
-import rt from '../../public/Logos/LogosReact.svg'
-import rx from '../../public/Logos/LogosRedux.svg'
-import nd from '../../public/Logos/LogosNodejsIcon.svg'
-import ex from '../../public/Logos/SkillIconsExpressjsLight.svg'
-import psql from '../../public/Logos/LogosPostgresql.svg'
-import sql from '../../public/Logos/DeviconSequelize.svg'
-import i18next from '../../public/Logos/SimpleIconsI18next.svg'
-import tw from '../../public/Logos/VscodeIconsFileTypeTailwind.svg'
+const db:Db = dbs
 
-import { type Logos } from '../types'
+import html5 from '../assets/Logos/DeviconHtml5.svg'
+import css3 from '../assets/Logos/DeviconCss3.svg'
+import git from '../assets/Logos/LogosGitIcon.svg'
+import js from '../assets/Logos/SkillIconsJavascript.svg'
+import ts from '../assets/Logos/SkillIconsTypescript.svg'
+import rt from '../assets/Logos/LogosReact.svg'
+import rx from '../assets/Logos/LogosRedux.svg'
+import nd from '../assets/Logos/LogosNodejsIcon.svg'
+import ex from '../assets/Logos/SkillIconsExpressjsLight.svg'
+import psql from '../assets/Logos/LogosPostgresql.svg'
+import sql from '../assets/Logos/DeviconSequelize.svg'
+import i18next from '../assets/Logos/SimpleIconsI18next.svg'
+import tw from '../assets/Logos/VscodeIconsFileTypeTailwind.svg'
+
+import { type Logos, type Db } from '../types'
 
 const Info = () => {
 
