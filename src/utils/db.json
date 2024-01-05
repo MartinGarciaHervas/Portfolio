@@ -3,7 +3,8 @@
         {
             "title": "Creva",
             "desc": {
-                "en": "Focused on offering services to enhance client skills, CreVa is a real company aiming to create value in individuals characteristics."
+                "en": "Focused on offering services to enhance client skills, CreVa is a real company aiming to create value in individuals characteristics.",
+                "es": "Centrada en la oferta de servicios para potenciar las habilidades del cliente, CreVa es una empresa real cuyo objetivo es crear valor en las características de cada uno."
             },
             "pageUrl":"https://creva.vercel.app/",
             "url":"https://github.com/CrevaGroup/server",
@@ -14,7 +15,8 @@
         {
             "title": "Countries",
             "desc": {
-                "en": "Focused on managing country-related activities, this platform allows users to create activities associated with specific countries, providing an interactive and informative experience."
+                "en": "Focused on managing country-related activities, this platform allows users to create activities associated with specific countries, providing an interactive and informative experience.",
+                "es": "Centrada en la gestión de actividades relacionadas con países, esta plataforma permite a los usuarios crear actividades y asociarlas a países específicos, brindando una experiencia interactiva e informativa."
             },
             "pageUrl":"https://pi-front-one.vercel.app/",
             "url":"https://github.com/MartinGarciaHervas/Proyecto-Individual-Countries",
@@ -24,7 +26,8 @@
         },{
             "title": "Portfolio",
             "desc": {
-                "en": "This portfolio :)"
+                "en": "This portfolio 😁",
+                "es": "Este Portfolio 😁"
             },
             "url":"https://github.com/MartinGarciaHervas/Portfolio",
             "technologies": [
@@ -34,10 +37,12 @@
     ],
     "Bio": {
         "title": {
-            "en": "Welcome!"
+            "en": "Welcome!",
+            "es": "Bienvenido!"
         },
         "desc": {
-            "en": "My name is Martín García Hervás, I'm a Full Stack Developer, with background experience of over 3 years in logistics and construction. I have worked on projects involving design and development in both Front End and Back End. My Soft-Skills include strong organizational ability, teamwork, and leadership."
+            "en": "My name is Martín García Hervás, I'm a Full Stack Developer, with background experience of over 3 years in logistics and construction. I have worked on projects involving design and development in both Front End and Back End. My Soft-Skills include strong organizational ability, teamwork, and leadership.",
+            "es": "Mi nombre es Martín García Hervás, soy un Full Stack Developer, con mas de 3 años de experiencia previa en logística y construcción. He trabajado en proyectos que involucran diseño y desarrollo, tanto en Front-End como en Back-End. Mis habilidades blandas incluyen una sólida capacidad organizativa, trabajo en equipo y liderazgo."
         }
     }
 }

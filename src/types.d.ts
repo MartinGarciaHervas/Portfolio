@@ -14,3 +14,27 @@ export interface Logos {
     sql:string
     i18next:string
 }
+
+export interface Project {
+    title: string
+    desc: {
+        [key:string]:string
+    }
+    pageUrl?:string
+    url:string
+    technologies:string[]
+}
+
+export interface Bio {
+    title:{
+        [key:string]: string
+    }
+    desc:{
+        [key:string]:string
+    }
+}
+
+export type Db = {
+    Projects:Project[]
+    Bio:Bio
+}
