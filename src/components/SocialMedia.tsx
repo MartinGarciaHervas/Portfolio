@@ -5,9 +5,10 @@ import logo from '../../public/logo white.svg'
 
 interface Props {
     infoSelect: (proyecto:string)=>void
+    languageInfo: ()=>void
 }
 
-const SocialMedia:React.FC<Props> = ({infoSelect}) => {
+const SocialMedia:React.FC<Props> = ({infoSelect, languageInfo}) => {
     return (
         <div className='flex justify-between mt-2 mb-6 w-full'>
             <div className='rounded-full pt-1 pr-1 hover:bg-bordergreen transition-all duration-500'>
@@ -40,6 +41,9 @@ const SocialMedia:React.FC<Props> = ({infoSelect}) => {
                             className="w-8 hover:w-9 transition-all duration-500"
                         />
                     </a>
+                </div>
+                <div>
+                    <button onClick={()=>{languageInfo()}}>Esp-Eng</button>
                 </div>
             </div>
         </div>
